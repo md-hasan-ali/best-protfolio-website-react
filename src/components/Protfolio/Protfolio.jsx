@@ -1,34 +1,39 @@
 import React from 'react';
 import './protfolio.css'
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 import sidebar from '../../img/sidebar.png'
 import hoc from '../../img/hoc.png'
-import ecommerce from '../../img/ecommerce.png'
 import musicApp from '../../img/musicapp.png'
 
 const Protfolio = () => {
     return (
-        <div>
-            {/* Headding */}
-            <span>Recent Projects</span>
-            <span>Protfolio</span>
-
-            {/* Slide */}
-
-            <Swiper>
-                <SwiperSlide>
-                    <img src={sidebar} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={hoc} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={musicApp} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={ecommerce} alt="" />
-                </SwiperSlide>
-            </Swiper>
+        <div className='protfolio-area'>
+            <div className="container">
+                <div className="section-title">
+                    <h2>My Awesome Works</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, repellat!</p>
+                </div>
+                <div className="protfolio">
+                    <div className="single-protfolio">
+                        <img src={hoc} alt="" />
+                    </div>
+                    <div className="single-protfolio">
+                        <img src={musicApp} alt="" />
+                    </div>
+                    <div className="single-protfolio">
+                        <img src={sidebar} alt="" />
+                    </div>
+                    <div className="single-protfolio">
+                        <img src={musicApp} alt="" />
+                    </div>
+                    <div className="single-protfolio">
+                        <img src={sidebar} alt="" />
+                    </div>
+                    <div className="single-protfolio">
+                        <img src={hoc} alt="" />
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
