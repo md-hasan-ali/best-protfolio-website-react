@@ -20,12 +20,12 @@
 
 .blur {
     position: absolute;
-    width: 22rem;
-    height: 14rem;
+    width: 14rem;
+    height: 24rem;
     top: -10;
     left: 65%;
     border-radius: 50%;
-    background: #edd0f5;
+    background: #eaeaea;
     z-index: -1;
     filter: blur(30px);
 }

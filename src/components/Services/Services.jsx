@@ -41,7 +41,7 @@ const Services = () => {
                         description={"Redux, TypeScript, Context Api"}
                     />
                 </div>
-                <div className="blur s-blur2" style={{ background: "var(--purple)" }}></div>
+                <div className="blur s-blur2" style={{ background: "rgb(238, 210, 255)" }}></div>
             </div>
         </div>
     );
