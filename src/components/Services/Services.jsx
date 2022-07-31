@@ -3,13 +3,20 @@ import './services.css'
 import heartImoje from '../../img/heartemoji.png'
 import Card from '../Card/Card';
 import resume from './Md_Hasan_Ali_Resume.pdf'
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
 
 const Services = () => {
+    const theme = useContext(themeContext)
+    const darkMode = theme.state.darkMode
     return (
         <div className='services'>
             {/* Left Side  */}
             <div className="awesome">
-                <span>My Awesome</span>
+                <span style={{
+                    background: darkMode ? 'black' : '',
+                    color: darkMode ? 'white' : ''
+                }}>My Awesome</span>
                 <span>Services</span>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum <br /> dolor sit amet consectetur, adipisicing elit. Blanditiis, reiciendis. Omnis, nulla!</span>
                 <a href={resume} download>

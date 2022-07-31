@@ -1,0 +1,22 @@
+.toogle {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid orange;
+    margin-left: 1rem;
+    padding: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.toogle>* {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+}
+
+.t-button {
+    position: absolute;
+    border-radius: 100%;
+    background-color: orange;
+}
